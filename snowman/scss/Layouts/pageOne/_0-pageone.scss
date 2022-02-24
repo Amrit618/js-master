@@ -1,0 +1,61 @@
+.pencil{
+    &-container{
+        // background: red;
+        margin-left: 400px;
+        margin-top:200px;
+
+        .rectangle{
+            // height:70px;
+            width:40px;
+            background: red;
+            .middle{
+               
+            }
+            .dark{
+                display: flex;
+                justify-content: space-between;
+                width: 40px;
+                background: #ffcccb;
+                height: 70px;
+                &-left{
+                    width:11px;
+                    height: 100%;
+                    background: #8A0303;
+                    .triangle{
+                        height: 0;
+                        width: 0;
+                        border-left:5.5px solid transparent;
+                        border-right: 5.5px solid transparent;
+                        // border-top:10px solid #000;
+                        border-top:10px solid #8A0303;
+                        margin-top: 70px;
+                        
+                    }
+                }
+                &-right{
+                    width: 11px;
+                    height: 100%;
+                    top:-70px;
+                    background: #8A0303;
+                    .triangle{
+                        height: 0;
+                        width: 0;
+                        border-left:5.5px solid transparent;
+                        border-right: 5.5px solid transparent;
+                        border-top:10px solid #8A0303;
+                        margin-top: 70px;
+                    }
+                    // float: right;
+                }
+            }
+        }
+
+        .triangle{
+            height:0;
+            width: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 50px solid #f00;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.snowman {
+  &-container {
+    margin-left: 250px;
+    margin-top: 50px;
+    height: 500px;
+    width: 500px;
+    background: lighten($color: blue, $amount: 0);
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: blue;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      .head {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background: #fff;
+        .eyes {
+          display: flex;
+          position: relative;
+          left: 25px;
+          top: 20px;
+          flex-direction: row;
+          .left {
+            height: 20px;
+            width: 20px;
+            border-radius: 10px;
+            background: red;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .eyeball {
+              height: 5px;
+              width: 5px;
+              border-radius: 2.5px;
+              background: #000;
+            }
+          }
+          .right {
+            height: 20px;
+            width: 20px;
+            border-radius: 10px;
+            background: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .eyeball {
+              height: 5px;
+              width: 5px;
+              border-radius: 2.5px;
+              background: #000;
+            }
+          }
+        }
+        .nose {
+          height: 0;
+          width: 0;
+          border-top: 7px solid transparent;
+          border-bottom: 7px solid transparent;
+          border-right: 30px solid red;
+          position: relative;
+          top: 20px;
+          left: 18px;
+        }
+      }
+      .body {
+        margin-top: -10px;
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        background: #fff;
+      }
+    }
+  }
+}

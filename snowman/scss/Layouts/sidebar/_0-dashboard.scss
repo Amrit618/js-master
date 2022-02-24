@@ -1,0 +1,14 @@
+.sidebar {
+  &-container {
+    background: red;
+    position:fixed;
+    top:0;
+    height:100vh;
+    ul {
+      li {
+        list-style-type: none;
+        margin-top: 20px;
+      }
+    }
+  }
+}
